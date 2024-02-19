@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+            position: relative;
+        }
+
+        #intro {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #87CEEB; /* Sky Blue */
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        #intro h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #intro img {
+            width: 33vw; /* Adjust the size as needed */
+            height: auto;
+            border-radius: 30%;
+            margin: 0 5px;
+            opacity: 1;
+        }
+
+        #main-content {
+            margin-top: 70vh; /* Adjusted the margin-top to reduce the gap */
+        }
+
+        main {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f8ff; /* Light Sky Blue */
+            animation: fadeIn 1s ease-out;
+            border-radius: 10px; /* Added border-radius for sections */
+        }
+
+        section {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #001f3f; /* Navy Blue */
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        #navbar a {
+            color: #87CEEB; /* Sky Blue */
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #navbar a:hover {
+            color: #fff; /* White */
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        h1#about-heading {
+            color: red;
+            font-size: 1.8em;
+        }
+
+        h1#education-heading {
+            color: maroon;
+            font-size: 1.8em;
+        }
+
+        h1#achievements-heading {
+            color: purple;
+            font-size: 1.8em;
+        }
+
+        h1#projects-heading {
+            color: green;
+            font-size: 1.8em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="intro">
+        <h1>Welcome to my Portfolio</h1>
+        <img src="jan.jpg" alt="Jan Mingle 1">
+        <img src="mingle.jpg" alt="Jan Mingle 2">
+        <img src="mings.jpg" alt="Jan Mingle 3">
+    </div>
+
+    <div id="main-content">
+        <div id="navbar">
+            <a onclick="scrollToSection('about')">About</a>
+            <a onclick="scrollToSection('education')">Education</a>
+            <a onclick="scrollToSection('achievements')">Achievements</a>
+            <a onclick="scrollToSection('projects')">Projects</a>
+        </div>
+
+        <main>
+            <section id="about">
+                <h1 id="about-heading">About Me</h1>
+                <p>Jan Mongwe is the fourth child among seven siblings on his mother's side and the eleventh among nineteen from his father's side, reflecting a rich tapestry of familial connections.</p>
+                <p>As a dedicated father and partner, Jan brings a profound sense of responsibility and care to his family.</p>
+                <p>With a unique position as both a middle child and a part of a large extended family, Jan has cultivated a strong sense of camaraderie, adaptability, and understanding.</p>
+                <p>His journey through life is shaped by the diverse dynamics of sibling relationships, offering him a broad perspective on human connections.</p>
+                <p>Jan embraces the roles of fatherhood and partnership with enthusiasm, striving to create a supportive and loving environment for his own family, drawing inspiration from the intricate web of relationships that define his personal narrative.</p>
+            </section>
+
+            <section id="education">
+                <h1 id="education-heading">Education</h1>
+                <p>Jan Mongwe's educational journey reflects a path marked by determination, adaptability, and a quest for fulfillment. His academic voyage began at Mantsha Primary School, where he laid the foundation for his future pursuits.</p>
+                <p>Transitioning to Kgola ka Leleme High School, Jan's commitment to excellence was evident as he graduated at the top of his class during matriculation.</p>
+                <p>Following a gap year, Jan entered the workforce, gaining valuable experience in the warehouse industry. Recognizing the importance of further education, he enrolled in Financial Management at Tshwane North College.</p>
+                <p>A year later, driven by a desire for broader horizons, Jan made the decision to shift gears and registered for a BCom Accounting program with Richfield from 2017 to 2019.</p>
+                <p>Undeterred by challenges in securing employment within the accounting field, Jan embarked on a new academic venture. In 2021, he registered for a BSc in Information Technology, showcasing his adaptability and eagerness to explore evolving career paths.</p>
+                <p>Having successfully completed his studies, Jan has transitioned into the realm of technology as a full-stack software developer.</p>
+                <p>While navigating the competitive job market, Jan is actively working on building an impressive portfolio to enhance his employment prospects. His dedication to continuous learning and resilience in the face of career shifts underscore his commitment to personal and professional growth as he forges ahead in the dynamic field of IT.</p>
+            </section>
+
+            <section id="achievements">
+                <h1 id="achievements-heading">Achievements</h1>
+                <p>Despite the challenges of unemployment, Jan Mongwe has demonstrated remarkable resilience and achieved significant milestones in his personal life.</p>
+                <p>At the age of 27, Jan takes pride in being a homeowner, securing a place he can call his own. This accomplishment not only reflects his financial acumen but also underscores his determination to create stability in the face of career uncertainties.</p>
+                <p>In addition to homeownership, Jan has managed to acquire a car, symbolizing his commitment to personal mobility and independence.</p>
+                <p>These material achievements are a testament to Jan's ability to navigate through life's obstacles and make substantial progress even in the absence of traditional employment.</p>
+                <p>Furthermore, Jan's academic journey has been marked by exceptional accomplishments. Despite the challenges of the job market, he has earned two degrees – a BCom in Accounting and a BSc in Information Technology.</p>
+                <p>This dual achievement not only showcases his intellectual prowess but also highlights his dedication to continuous learning and personal development.</p>
+                <p>Jan's story serves as an inspiration, demonstrating that success is not solely defined by traditional career paths.</p>
+                <p>His resilience, coupled with his accomplishments in homeownership, vehicle ownership, and dual degrees, paints a portrait of a determined individual who continues to thrive and build a life of significance despite the odds.</p>
+            </section>
+
+            <section id="projects">
+                <h1 id="projects-heading">Projects</h1>
+                <p>Jan Mongwe's foray into projects showcases his diverse skill set and innovative thinking. In his solo ventures, he has demonstrated the ability to create impactful web applications that address real-world needs.</p>
+                <p>One notable project is his Stockvel Account system, where he utilized PHP, MySQL, and JavaScript. This secure platform incorporates a two-step verification process, ensuring a robust and safe user experience.</p>
+                <p>The essence of the project lies in facilitating user interaction, allowing participants to collaborate and enhance their financial well-being collectively.</p>
+                <p>In another endeavor, Jan developed a platform tailored for high school learners. This system assists students in selecting their subjects and, in turn, generates personalized suggestions for potential courses to pursue.</p>
+                <p>It goes a step further by providing insights into the qualifications required for these courses and directing learners to relevant links of institutions offering them.</p>
+                <p>This project reflects Jan's commitment to leveraging technology for educational guidance and empowerment.</p>
+                <p>Additionally, Jan has contributed to the realm of business management by creating an Invoice Management System.</p>
+                <p>This project streamlines the process of handling invoices, showcasing his versatility in addressing practical challenges through software solutions.</p>
+                <p>Jan's projects not only demonstrate technical proficiency but also reflect a keen understanding of user needs and a commitment to creating solutions that have a positive impact.</p>
+                <p>As he continues to build his portfolio, these projects stand as a testament to his capabilities as a full-stack software developer.</p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
